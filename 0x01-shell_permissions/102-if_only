@@ -1,1 +1,2 @@
 #!/bin/bash
+echo if_only
