@@ -1,0 +1,2 @@
+#!/bin/bash
+greo -v bin /etc/passwd
