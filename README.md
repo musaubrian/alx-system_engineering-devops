@@ -1,1 +1,1 @@
-<h1>Contains basic shell scripts<h1/>
+<h1>Contains shell projects <h1/>
