@@ -1,6 +1,6 @@
 ### Accessing the site explanation
 
-The user types the url/domain name(www.foobar.com) that points to the 
+The user types the url/domain name(www.foobar.com) that points to the
 IP address of the respective server (8.8.8.8) in the browser.
 The browser checks its cache for the IP address,
 if not found it checks the operating system's cache, if it still doesn't locate it in the OS's
@@ -11,10 +11,11 @@ it goes to the root server where the root server redirects it TOP Level Domain (
 The resolver checks with the .com TLD server and is redirected to the authoritative name servers.
 The resolver/ISP caches the content from the name server i.e the IP address and sends the request to the IP address(8.8.8.8).
 
-----
+---
+
 ### specifics
 
-**What is a server ->** Computer hardware or software that provides 
+**What is a server ->** Computer hardware or software that provides
 functionality for other programs/devices
 
 **Role of the domain name ->** points to an IP address
@@ -31,10 +32,11 @@ required data.
 **What is the server using to communicate with the computer of the user requesting the website
 ->** HTTP requests
 
-----
+---
+
 ### Issues
 
-**Single Point Of Failure (SPOF) ->** this is a part of a system that if fails, the 
+**Single Point Of Failure (SPOF) ->** this is a part of a system that if fails, the
 entire system stops working.
 In this case the **SPOF** is the single server.
 
