@@ -23,3 +23,6 @@ Contains shell projects on redirections.
 - ## [Networking basics #0](./0x07-networking_basics)
 
 - ## [Networking basics #1](./0x08-networking_basics_2)
+
+- ## [Web infrastructure design](./0x09-web_infrastructure_design)
+
