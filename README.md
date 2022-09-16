@@ -26,3 +26,4 @@ Contains shell projects on redirections.
 
 - ## [Web infrastructure design](./0x09-web_infrastructure_design)
 
+- ## [Attack is the best defense](./attack_is_the_best_defense)
