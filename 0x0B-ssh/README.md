@@ -1,1 +1,1 @@
-# we take allok at SSH
+# we take a look at SSH
