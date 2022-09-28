@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+# fix bug where nginx doesn't listen on port 80
