@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 #create a custome header var
 
-sudo apt-get -y update
-sudo apt-get -y upgrade
-sudo apt-get -y install nginx
-sudo sed -i "11i\\\tadd_header X-Served-By $HOSTNAME;" /etc/nginx/nginx.conf
-echo "Holberton School" | sudo tee /usr/share/nginx/html/index.html
-sudo service nginx start
+sudo apt update
+sudo apt install -y nginx
+sudo apt install -y sed
+sudo ufw allow 'Nginx HTTP'
+echo "Hello World!" | sudo tee /var/www/html/index.html
+sudo sed -i 's/server_name _;$/server_name _;\n\n\tadd_header X-Served-By $hostname;\n/' /etc/nginx/sites-enabled/default
+sudo service nginx restart
