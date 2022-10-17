@@ -25,5 +25,5 @@ if __name__ == "__main__":
     todoUser[userId] = taskList
 
     filename = userId + '.json'
-    with open(filename, mode='w') as f:
+    with open(filename, 'w') as f:
         json.dump(todoUser, f)

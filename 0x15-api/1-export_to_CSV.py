@@ -23,7 +23,7 @@ def send_request():
     employee_name = user_response.json().get('name')
     
     filename = employee_id + '.csv'
-    with open(filename, 'w') as file:
+    with open(filename, 'a') as file:
         csv_writer = csv.writer(file, delimiter=',', quotechar='"',
                                 quoting=csv.QUOTE_ALL, lineterminator='\n')
         for task in todos_response.json():
