@@ -29,20 +29,15 @@ def send_request():
             if task.get('completed'):
                 completed_tasks += 1
 
+    todo_content = '\n'.join(["\t " + task.get('title')
+                              for task in todos_response.json()
+                              if task.get('userId') == int(employee_id)
+                              and task.get('completed')])
     print(
             f"Employee {employee_name}",
             f"is done with ({completed_tasks}/{total_tasks})"
             )
-
-    print(
-            "\n".join(
-                [
-                    "\t " + task.get('title') for task in todos_response.json()
-                    if task.get('userId') == int(employee_id) and
-                    task.get('completed')
-                    ]
-                )
-            )
+    print(todo_content)
 
 
 if __name__ == "__main__":
