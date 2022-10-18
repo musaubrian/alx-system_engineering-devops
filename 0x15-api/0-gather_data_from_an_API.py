@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""
-module sends request to an API
-"""
+""" module sends request to an API """
 
 import requests
 import sys

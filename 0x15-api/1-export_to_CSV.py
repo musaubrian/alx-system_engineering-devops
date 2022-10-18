@@ -1,13 +1,9 @@
 #!/usr/bin/python3
-"""
-module sends request to an API and
-writes the response in a csv file
-"""
+"""module writes response to a CSV file"""
 
 import csv
 import requests
 import sys
-
 
 
 if __name__ == "__main__":
@@ -21,12 +17,13 @@ if __name__ == "__main__":
             )
 
     employee_name = user_response.json().get('name')
-    
+
     filename = employee_id + '.csv'
     with open(filename, 'a') as file:
         csv_writer = csv.writer(file, delimiter=',', quotechar='"',
                                 quoting=csv.QUOTE_ALL, lineterminator='\n')
         for task in todos_response.json():
             if task.get('userId') == int(employee_id):
-                csv_writer.writerow([employee_id, employee_name, str(task.get('completed')),
-                                 task.get('title')])
+                csv_writer.writerow([
+                    employee_id, employee_name, str(task.get('completed')),
+                    task.get('title')])
