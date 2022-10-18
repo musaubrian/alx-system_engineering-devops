@@ -9,11 +9,9 @@ import requests
 import sys
 
 
-def send_request():
-    """
-    entry point of the module
-    Sends a request for a json file
-    """
+
+if __name__ == "__main__":
+
     employee_id = sys.argv[1]
     user_response = requests.get(
             f"https://jsonplaceholder.typicode.com/users/{employee_id}"
@@ -32,6 +30,3 @@ def send_request():
             if task.get('userId') == int(employee_id):
                 csv_writer.writerow([employee_id, employee_name, str(task.get('completed')),
                                  task.get('title')])
-
-if __name__ == "__main__":
-    send_request()
