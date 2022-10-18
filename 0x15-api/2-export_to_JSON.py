@@ -1,5 +1,9 @@
 #!/usr/bin/python3
-"""Exports data in the JSON format"""
+"""
+Module sends a request to an API
+and dsaves the response in a JSON file
+"""
+
 
 if __name__ == "__main__":
 

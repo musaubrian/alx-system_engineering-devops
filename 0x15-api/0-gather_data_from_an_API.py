@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-send request to an API
+module sends request to an API
 """
 
 import requests

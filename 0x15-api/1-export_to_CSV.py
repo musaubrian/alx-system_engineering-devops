@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-send request to an API
+module sends request to an API and
+writes the response in a csv file
 """
 
 import csv
@@ -10,6 +11,7 @@ import sys
 
 def send_request():
     """
+    entry point of the module
     Sends a request for a json file
     """
     employee_id = sys.argv[1]
