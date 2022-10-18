@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""module writes response to a CSV file"""
-
+""" module writes response to a CSV file """
 import csv
 import requests
 import sys

@@ -3,13 +3,12 @@
 Module sends a request to an API
 and dsaves the response in a JSON file
 """
+import json
+import requests
+import sys
 
 
 if __name__ == "__main__":
-
-    import json
-    import requests
-    import sys
 
     userId = sys.argv[1]
     user = requests.get("https://jsonplaceholder.typicode.com/users/{}"
