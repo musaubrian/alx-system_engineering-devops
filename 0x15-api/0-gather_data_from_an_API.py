@@ -7,10 +7,8 @@ import requests
 import sys
 
 
-def send_request():
-    """
-    Sends a request for a json file
-    """
+if __name__ == "__main__":
+
     employee_id = sys.argv[1]
     user_response = requests.get(
             f"https://jsonplaceholder.typicode.com/users/{employee_id}"
@@ -38,7 +36,3 @@ def send_request():
             f"is done with ({completed_tasks}/{total_tasks})"
             )
     print(todo_content)
-
-
-if __name__ == "__main__":
-    send_request()
